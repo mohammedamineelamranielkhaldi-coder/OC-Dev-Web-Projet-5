@@ -1,0 +1,53 @@
+@import './utils/variables';
+
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Banner + Card + Header */
+@import './components/banner';
+
+@import './components/card';
+
+@import "./components/header";
+
+@import "./components/footer";
+
+
+
+//* style de la grille avec grid */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.header, .banner, .cards-wrapper {
+  width: 1240px;
+  max-width: 100%;
+}
+
+body {
+  padding: 40px 100px; // marge autour du contenu
+}
+
+//* Ajustement du footer pour éviter les marges indésirables */
+footer {
+  margin: 0 -100px;
+  padding-bottom: 0;
+  margin-bottom: -40px; 
+}
