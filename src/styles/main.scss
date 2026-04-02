@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
+/* Police globale */
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0; // IMPORTANT : on enlève le padding qui cassait tout
 }
 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-@import './utils/variables';
-
-
+/* Layout */
 html, body {
   height: 100%;
 }
@@ -19,73 +26,33 @@ html, body {
 }
 
 .layout__content {
-  flex: 1; // prend tout l’espace disponible
+  flex: 1;
 }
 
-
-/* Reset simple */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Banner + Card + Header + About */
+/* Imports */
+@import './utils/variables';
 @import './components/banner';
-
 @import './components/card';
-
 @import "./components/header";
-
 @import "./components/footer";
-
 @import "./components/about";
-
 @import "./components/collapse";
-
 @import "./components/notfound";
+@import "./components/slideshow";
+@import "./components/logement";
 
-
-
-
-//* style de la grille avec grid */
-
+/* Grille */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
 }
 
-
-.header, .banner, .cards-wrapper {
-  width: 1240px;
-  max-width: 100%;
-}
-
-body {
-  padding: 40px 100px; // marge autour du contenu
-}
-
-//* Ajustement du footer pour éviter les marges indésirables */
-footer {
-  margin: 0 -100px;
-  padding-bottom: 0;
-  margin-bottom: -40px; 
-}
-
-
-
-
-
+/* Container global */
 .container {
   max-width: 1240px;
   margin: 0 auto;
