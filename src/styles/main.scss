@@ -1,4 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 @import './utils/variables';
+
+
+html, body {
+  height: 100%;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout__content {
+  flex: 1; // prend tout l’espace disponible
+}
+
 
 /* Reset simple */
 * {
@@ -11,7 +34,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Banner + Card + Header */
+/* Banner + Card + Header + About */
 @import './components/banner';
 
 @import './components/card';
@@ -19,6 +42,13 @@ body {
 @import "./components/header";
 
 @import "./components/footer";
+
+@import "./components/about";
+
+@import "./components/collapse";
+
+@import "./components/notfound";
+
 
 
 
@@ -50,4 +80,13 @@ footer {
   margin: 0 -100px;
   padding-bottom: 0;
   margin-bottom: -40px; 
+}
+
+
+
+
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
 }

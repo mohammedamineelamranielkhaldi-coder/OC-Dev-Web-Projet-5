@@ -1,0 +1,23 @@
+.notfound {
+  text-align: center;
+  padding: 80px 0;
+
+  &__code {
+    font-size: 180px;
+    font-weight: 700;
+    color: #ff6060;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 24px;
+    margin-bottom: 80px;
+    color: #ff6060;
+  }
+
+  &__link {
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+  }
+}

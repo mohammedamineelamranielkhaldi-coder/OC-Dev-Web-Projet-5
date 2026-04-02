@@ -5,7 +5,7 @@ import HomeImage from "../assets/HomeImage.jpg";
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home container">
       <Banner image={HomeImage} text="Chez vous, partout et ailleurs" />
 
       <div className="cards-wrapper">
@@ -23,5 +23,3 @@ export default function Home() {
     </div>
   );
 }
-
-

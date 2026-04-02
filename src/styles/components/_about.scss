@@ -1,0 +1,14 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center; // centre tout le contenu
+
+  &__collapses {
+    width: 100%;
+    max-width: 1000px; // largeur souhaitée
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

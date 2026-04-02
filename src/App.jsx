@@ -4,11 +4,13 @@ import Router from "./router/Router";
 
 function App() {
   return (
-    <>
+    <div className="layout">
       <Header />
-      <Router />
+      <div className="layout__content">
+        <Router />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
