@@ -92,3 +92,101 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+
+  .logement {
+    padding: 0 20px;
+
+    &__top {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Titre + localisation */
+    &__title {
+      font-size: 24px;
+    }
+
+    &__location {
+      font-size: 16px;
+    }
+
+    /* Tags */
+    &__tags {
+      gap: 8px;
+
+      .tag {
+        font-size: 12px;
+        padding: 4px 15px;
+      }
+    }
+
+    /* Rating + Host sur la même ligne */
+    &__host-rating {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__rating {
+      order: 1;
+      gap: 5px;
+
+      .star {
+        width: 18px;
+      }
+    }
+
+    &__host {
+    order: 2;
+
+      p {
+        font-size: 14px;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    /* Collapses */
+    &__collapses {
+      flex-direction: column;
+      gap: 20px;
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+
+  /* Slideshow */
+  .slideshow {
+    height: 255px;
+
+    img {
+      height: 255px;
+    }
+
+    .slideshow__counter {
+      font-size: 14px;
+      bottom: 10px;
+    }
+
+    .slideshow__arrow {
+      width: 24px;
+    }
+  }
+}

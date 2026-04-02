@@ -21,3 +21,42 @@
     color: black;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+
+  .notfound {
+    padding: 0 20px;
+    text-align: center;
+
+    h1 {
+      font-size: 200px;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 20px 0;
+    }
+
+    a {
+      font-size: 14px;
+      text-decoration: underline;
+    }
+  }
+}

@@ -35,3 +35,13 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
+
+
+
+@media (max-width: 425px) {
+.cards-wrapper {
+  padding: 15px;
+}
+
+
+}

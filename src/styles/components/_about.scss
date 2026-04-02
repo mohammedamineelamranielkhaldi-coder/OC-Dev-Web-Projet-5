@@ -12,3 +12,33 @@
     gap: 30px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+
+  /* Banner About */
+  .banner {
+    height: 200px;
+    margin: 20px 0;
+  }
+
+  /* Collapses */
+  .about__collapses {
+    padding: 0 20px;
+    gap: 20px;
+
+    .collapse {
+      width: 100%;
+    }
+  }
+}

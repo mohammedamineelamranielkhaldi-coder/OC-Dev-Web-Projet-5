@@ -57,3 +57,40 @@ html, body {
   max-width: 1240px;
   margin: 0 auto;
 }
+
+
+
+
+
+@media (max-width: 425px) {
+
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /* Banner Home */
+  .banner {
+    height: 200px;
+
+.banner__text {
+  position: absolute;
+  top: 50%;
+  left: 1px;        
+  transform: translateY(-50%); 
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: left;  
+  width: calc(100% - 40px); 
+}
+
+  }
+
+  /* Grille de cartes */
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+}
