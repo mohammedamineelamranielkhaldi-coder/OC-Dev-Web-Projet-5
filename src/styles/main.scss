@@ -27,7 +27,11 @@ html, body {
 
 .layout__content {
   flex: 1;
+  padding-left: 50px;
+  padding-right: 50px;
 }
+
+
 
 /* Imports */
 @import './utils/variables';
@@ -63,16 +67,15 @@ html, body {
 
 
 @media (max-width: 425px) {
-
-  .container {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
+.layout__content {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
   /* Banner Home */
   .banner {
     height: 200px;
-
+  }
 .banner__text {
   position: absolute;
   top: 50%;
@@ -85,7 +88,7 @@ html, body {
   width: calc(100% - 40px); 
 }
 
-  }
+  
 
   /* Grille de cartes */
   .cards-grid {
@@ -93,4 +96,5 @@ html, body {
     gap: 20px;
     padding: 0 20px;
   }
+
 }
