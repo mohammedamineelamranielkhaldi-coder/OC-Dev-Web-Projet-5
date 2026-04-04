@@ -13,7 +13,7 @@ export default function Slideshow({ pictures }) {
     setCurrentIndex((prev) => (prev === 0 ? total - 1 : prev - 1));
   };
 
-  // Si une seule image → pas de flèches, pas de numérotation
+  // Si une seule image pas de flèches, pas de numérotation
   if (total === 1) {
     return (
       <div className="slideshow">

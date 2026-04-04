@@ -6,12 +6,31 @@
   border-radius: 10px;
   overflow: hidden;
 
+  /* Image */
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
+  /* Dégradé sombre permanent */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%; 
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.35), 
+      rgba(0, 0, 0, 0)
+    );
+    z-index: 1; /* Passe devant l’image */
+    pointer-events: none;
+  }
+
+  /* Titre */
   &__title {
     position: absolute;
     left: 15px;
@@ -20,9 +39,11 @@
     font-size: 18px;
     font-weight: 500;
     width: 60%;
+    z-index: 2; /* Passe devant le dégradé */
   }
 }
 
+/* Wrapper */
 .cards-wrapper {
   background: #f6f6f6;
   border-radius: 25px;
@@ -30,18 +51,16 @@
   margin-top: 40px;
 }
 
+/* Grille */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
-
-
+/* Responsive */
 @media (max-width: 425px) {
-.cards-wrapper {
-  padding: 15px;
-}
-
-
+  .cards-wrapper {
+    padding: 15px;
+  }
 }
